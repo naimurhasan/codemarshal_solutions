@@ -161,3 +161,33 @@ int main()
     return 0;
 }
 ```
+
+
+# Problem 02 : Solution
+```cpp
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+using namespace std;
+
+void isInside(int cx, int cy, int r, int x,int y, int caseNo){
+    int distance = sqrt( pow( (x - cx), 2 ) + pow( (y - cy), 2 ) );
+    if(distance<r){
+        printf("Case %d: yes\n", caseNo);
+    }else{
+        printf("Case %d: no\n", caseNo);
+    }
+}
+
+int main()
+{
+    int n, a, b, c, d, e;
+    scanf("%d", &n);
+    for(int i = 0; i<n; i++){
+        scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+        isInside(a, b, c, d, e, i+1);
+    }
+    return 0;
+}
+```
