@@ -269,3 +269,20 @@ int main(){
     return 0;
 }
 ```
+
+# Problem 06
+CSE, DU তে স্বাগতম (Welcome to CSE, DU)
+```cpp
+#include<iostream>
+
+using namespace std;
+
+int main(){
+    int X, Y, Z, res;
+    scanf("%d %d %d",&X, &Y, &Z);
+    //calculate res by writing your code here.
+    res = (X-Z)+Y;
+    printf ( "%d\n", res );
+    return 0;
+}
+```
