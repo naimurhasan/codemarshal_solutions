@@ -256,3 +256,16 @@ int main(){
     return 0;
 }
 ```
+
+# Problem 05
+- বিজয় উৎযাপন ( Celebrating Victory )
+```cpp
+#include<iostream>
+
+using namespace std;
+
+int main(){
+    printf("Yaayy!! Bangladesh Won!!\n");
+    return 0;
+}
+```
