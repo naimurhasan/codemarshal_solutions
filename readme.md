@@ -222,7 +222,8 @@ int main(){
 }
 
 ```
-
+# Problem 04 : Solution
+- A এবং B এবং অপারেটর ( A and B and Operators )
 ```cpp
 #include<iostream>
 #include<string>
