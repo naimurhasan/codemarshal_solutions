@@ -164,6 +164,7 @@ int main()
 
 
 # Problem 02 : Solution
+- বৃত্তের ভিতরে বিন্দু ( Point Inside Circle )
 ```cpp
 #include <iostream>
 #include <stdio.h>
@@ -190,4 +191,34 @@ int main()
     }
     return 0;
 }
+```
+
+# Problem 03 : Solution
+- ছোট থেকে বড়! ( Lower to Upper! )
+```cpp
+#include<iostream>
+#include<vector>
+#include<string>
+using namespace std;
+int main(){
+    int n;
+    char c;
+    scanf("%d%c", &n, &c);
+
+    for(int i = 0; i<n; i++){
+        vector<char>input;
+        string line;
+        getline(cin, line);
+        for(int j = 0; j<line.size(); j++){
+            input.push_back(toupper(line[j]));
+        }
+        printf("Case %d: ", i+1);
+        for(int j = 0; j<input.size(); j++){
+            printf("%c", input[j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
 ```
