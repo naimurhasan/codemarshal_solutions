@@ -222,3 +222,36 @@ int main(){
 }
 
 ```
+
+```cpp
+#include<iostream>
+#include<string>
+using namespace std;
+
+void calculate(long long int num1, long long int num2, char op, int caseNum){
+    if(op =='+'){
+        printf("Case %d: %lld\n", caseNum, num1+num2);
+    }else if( op =='-' ){
+        printf("Case %d: %lld\n", caseNum, num1-num2);
+    }else if( op =='%' ){
+        printf("Case %d: %lld\n", caseNum, num1%num2);
+    }else if( op =='/' ){
+        printf("Case %d: %lld\n", caseNum, num1/num2);
+    }else{
+        printf("Case %d: %lld\n", caseNum, num1*num2);
+    }
+}
+
+int main(){
+    int T;
+    char c, op;
+    long long int num1, num2;
+    scanf("%d%c",&T, &c);
+    for(int i = 0; i<T; i++){
+        scanf("%lld %lld %c", &num1, &num2, &op);
+        calculate(num1, num2, op, i+1);
+    }
+
+    return 0;
+}
+```
