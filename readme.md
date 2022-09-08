@@ -271,7 +271,7 @@ int main(){
 ```
 
 # Problem 06
-CSE, DU তে স্বাগতম (Welcome to CSE, DU)
+- CSE, DU তে স্বাগতম (Welcome to CSE, DU)
 ```cpp
 #include<iostream>
 
@@ -283,6 +283,66 @@ int main(){
     //calculate res by writing your code here.
     res = (X-Z)+Y;
     printf ( "%d\n", res );
+    return 0;
+}
+```
+# Problem 06
+প্রায় মৌলিক সংখ্যা ( Almost Prime Numbers )
+###### (I'll need to restudy this one)
+```cpp
+#include<bits/stdc++.h>
+#define nl      '\n'
+
+using  namespace  std;
+typedef long long int ll;
+typedef unsigned long long int llu;
+int prime[1000001];
+int n=1000001;
+vector<int>v;
+void sieve()
+{
+	memset(prime,0,sizeof(prime));
+	prime[0]=prime[1]=1;
+	for(int i=2;i*i<=n;i++)
+	{
+		if(prime[i]==0)
+		{
+			for(int j=i*i;j<=n;j+=i)
+			{
+				prime[j]=1;
+			}
+		}
+	}
+}
+//map<ll,ll>mp;
+vector<ll>ans;
+void solve()
+{
+    for(ll i=0;i<=n;i++)
+    {
+        if(!prime[i])
+        {
+            for(ll j=i*i;j<1000000000001;j*=i)ans.push_back(j);
+        }
+    }
+    sort(ans.begin(),ans.end());
+}
+int main()
+{
+    sieve();
+    solve();
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        ll l,r;
+        cin>>l>>r;
+        ll i=0;
+        ll cnt=0;
+        while(ans[i]<l)i++;
+        for(;i<ans.size() && ans[i]<=r;i++)cnt++;
+        cout<<cnt<<nl;
+    }
     return 0;
 }
 ```
