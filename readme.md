@@ -286,7 +286,7 @@ int main(){
     return 0;
 }
 ```
-# Problem 06
+# Problem 07
 প্রায় মৌলিক সংখ্যা ( Almost Prime Numbers )
 ###### (I'll need to restudy this one)
 ```cpp
@@ -346,7 +346,7 @@ int main()
     return 0;
 }
 ```
-# Problem 07
+# Problem 08
 - max num
 ```cpp
 #include <stdio.h>
@@ -372,7 +372,8 @@ int main(){
 }
 ```
 
-# Problem 08
+# Problem 09
+- avg
 #include <stdio.h>
 
 int main(){
