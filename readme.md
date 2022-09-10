@@ -395,3 +395,21 @@ int main(){
 ```
 
 # Problem 10
+- area of a triangle
+```cpp
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int T;
+    double area, a, b, c, s;
+    scanf("%d", &T);
+    for(int i = 0; i<T; i++){
+        scanf("%lf %lf %lf", &a, &b, &c);
+        s = (float) (a + b + c) / 2;
+        area = sqrt( s * (s-a) * (s-b) * (s-c));
+        printf("Case %d: %.10lf\n", i+1, area);
+    }
+    return 0;
+
+}
+```
