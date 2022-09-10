@@ -371,3 +371,23 @@ int main(){
     return 0;
 }
 ```
+
+# Problem 08
+#include <stdio.h>
+
+int main(){
+    int T, N, sum, inp, avg;
+    scanf("%d", &T);
+    for(int i = 0; i<T; i++){
+        scanf("%d", &N);
+        sum = 0;
+        for(int j = 0; j<N; j++){
+            scanf("%d", &inp);
+            sum += inp;
+        }
+        avg = sum / N;
+        printf("Case %d: %d\n", i+1, avg);
+    }
+    return 0;
+}
+
