@@ -374,6 +374,7 @@ int main(){
 
 # Problem 09
 - avg
+```cpp
 #include <stdio.h>
 
 int main(){
@@ -391,4 +392,6 @@ int main(){
     }
     return 0;
 }
+```
 
+# Problem 10
