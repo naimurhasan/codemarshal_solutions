@@ -346,3 +346,28 @@ int main()
     return 0;
 }
 ```
+# Problem 07
+- max num
+```cpp
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    int T;
+    scanf("%d", &T);
+    for(int i = 0; i<T; i++){
+            int a, b, c, max;
+            scanf("%d %d %d", &a, &b, &c);
+            max = a;
+            if(b>=max){
+                max = b;
+            }
+            if(c>=max){
+                max = c;
+            }
+            printf("Case %d: %d\n", i+1, max);
+
+    }
+    return 0;
+}
+```
