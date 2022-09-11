@@ -413,3 +413,38 @@ int main(){
 
 }
 ```
+# Problem 11
+- counting numbers
+```cpp
+#include<stdio.h>
+
+int main()
+{
+    int T;
+    scanf("%d", &T);
+
+    for(int i = 1; i <= T; i++)
+    {
+        int n, c[101] = {0}, tmp;
+        scanf("%d", &n) >> n;
+        for(int j = 0; j < n; j++)
+        {
+          scanf("%d", &tmp);
+          c[tmp]++;
+        }
+
+
+        int h = 0,m;
+        for(int j = 0; j <= 100; j++)
+        {
+            if(c[j] >= h)
+            {
+                h = c[j];
+                m = j;
+            }
+        }
+        printf("Case %d: %d %d\n", i, m, h);
+    }
+
+}
+```
