@@ -448,3 +448,36 @@ int main()
 
 }
 ```
+## Problem 12 (Unsolved / Not Accepted)
+- N gon
+```cpp
+#include<stdio.h>
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int T;
+    long long int num;
+
+    scanf("%d", &T);
+        for(int t = 1; t<=T; t++){
+            scanf("%lld", &num);
+            if(num<180){
+                cout << "Case " << t <<": Impossible" << endl;
+            }else{
+                if(num%180!=0){
+                  cout << "Case " << t <<": Impossible" << endl;
+                }else{
+                    int k = num/180;
+                    int x = k+2;
+                    int y = 180*k/(k+2);
+                    cout << "Case "<<t<<": "<<x<<" "<<y << endl;
+                }
+            }
+
+        }
+    return 0;
+}
+```
